@@ -82,5 +82,11 @@ module.exports = {
             optimize: true,
         }
     },
+    {
+        resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+        options: {
+            siteUrl: `https://gatsby.aino-no-fun.com`,
+        },
+    },
   ],
 }
