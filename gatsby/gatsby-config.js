@@ -5,6 +5,18 @@ module.exports = {
   },
   plugins: [
     {
+        resolve: 'gatsby-plugin-html2amp',
+        options: {
+            files: ['post/**/index.html', 'index.html'],
+            publicPath: 'public',
+            gaConfigPath: 'gaConfig.json',
+            dist: 'public/dist',
+            optimize: true,
+            htmlPlugins: [],
+            cssPlugins: []
+        }
+    }
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
